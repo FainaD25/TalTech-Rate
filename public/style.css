@@ -10,10 +10,17 @@
 
     --font-family-heading: 'Raleway', sans-serif;
     --font-family-paragraph: 'Lato', sans-serif;
+
+    /* Variables for color HEX codes */
+    --deep-blue: #03045E;
+    --blue: #0077B6;
+    --turquoise: #00B4D8;
+    --light-blue: #90E0EF;
+    --crey: #EDF4F7;
+    --orange: #FF4D00;
 }
 
 /* Base styling */
-
 body {
     font-size: var(--font-responsive-md);
     font-family: var(--font-family-paragraph)
