@@ -1,1 +1,59 @@
-testing
+:root {
+    /* Responsive font sizes using clamp() */
+    --font-responsive-xs: clamp(10px, 1.5vw, 14px);
+    --font-responsive-sm: clamp(12px, 2vw, 16px);
+    --font-responsive-md: clamp(14px, 2.5vw, 20px);
+    --font-responsive-lg: clamp(18px, 3vw, 24px);
+    --font-responsive-xl: clamp(22px, 3.5vw, 28px);
+    --font-responsive-2xl: clamp(30px, 4vw, 36px);
+    --font-responsive-3xl: clamp(38px, 4.5vw, 44px);
+
+    --font-family-heading: 'Raleway', sans-serif;
+    --font-family-paragraph: 'Lato', sans-serif;
+}
+
+/* Base styling */
+
+body {
+    font-size: var(--font-responsive-md);
+    font-family: var(--font-family-paragraph)
+}
+
+.text-xs {font-size: var(--font-responsive-xs);}
+
+.text-sm {font-size: var(--font-responsive-sm);}
+
+.text-md {font-size: var(--font-responsive-md);}
+
+.text-lg {font-size: var(--font-responsive-lg);}
+
+.text-xl {font-size: var(--font-responsive-xl);}
+
+.text-2xl {font-size: var(--font-responsive-2xl);}
+
+.text-3xl {font-size: var(--font-responsive-3xl);}
+
+h1 {
+    font-size: var(--font-responsive-3xl);
+    font-family: var(--font-family-heading);
+    font-weight: bold;
+}
+
+h2 {
+    font-size: var(--font-responsive-2xl);
+    font-family: var(--font-family-heading);
+    font-weight: bold;
+}
+
+h3 {
+    font-size: var(--font-responsive-xl);
+    font-family: var(--font-family-heading);
+    font-weight: normal;
+}
+
+p {
+    font-size: var(--font-responsive-md);
+    font-family: var(--font-family-paragraph);
+    font-weight: normal;
+    text-align: left;
+}
