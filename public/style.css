@@ -194,6 +194,15 @@ body, h1, h2, p {
     cursor: pointer;
 }
 
+.button-icon {
+    display: inline-block;
+    margin-left: 5px;
+    background-color: white;
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+}
+
 .magnifying-glass-icon {
     -webkit-mask: url(Icons/magnifying-glass.svg) center/cover no-repeat;
     mask: url(Icons/magnifying-glass.svg) center/cover no-repeat;
@@ -207,4 +216,74 @@ body, h1, h2, p {
 .user-circle-icon {
     -webkit-mask: url(Icons/user-circle.svg) center/cover no-repeat;
     mask: url(Icons/user-circle.svg) center/cover no-repeat;
+}
+
+
+.primary-button {
+    padding: 15px 20px;
+    border-radius: 10px;
+    background: #03045E;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #FFF;
+    text-align: center;
+    font-family: Raleway, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.primary-button:hover {
+    background: #030080;
+    cursor: pointer;
+}
+
+
+.secondary-button {
+    display: inline-flex;
+    padding: 15px 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(3, 4, 94, 0.70);
+    background: rgba(255, 77, 0, 0.00);
+    color: #000;
+    text-align: center;
+    font-family: Raleway, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.secondary-button:hover {
+    background: rgba(0, 0, 0, 0.20);
+    cursor: pointer;
+}
+
+.icon-button {
+    padding: 15px 11px;
+    border-radius: 10px;
+    background: #03045E;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #FFF;
+    text-align: center;
+    font-family: Raleway, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.icon-button:hover {
+    background: #030080;
+    cursor: pointer;
 }
