@@ -1,0 +1,239 @@
+/* Import the global styles */
+@import "global.css";
+
+/* Page-specific styles go here */
+
+body {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+button {
+    color: #ffffff;
+    font-size: var(--font-responsive-md);
+    border: 1px solid #2d63c8;
+    border-radius: 15px;
+    padding: 10px 35px;
+    cursor: pointer;
+}
+
+button.primary {
+    background: var(--deep-blue);
+}
+
+button.secondary {
+    background: var(--blue);
+    border-color: white
+}
+
+button:hover {
+    color: #2d63c8;
+    background-color: #ffffff;
+}
+
+.welcome-text {
+    font-size: var(--font-responsive-2xl);
+    font-family: var(--font-family-heading);
+    font-weight: bold;
+    color: var(--crey);
+}
+
+.count-bg {
+    background-color: #ff4d00;
+    border-radius: 15px;
+    padding: 5px 10px;
+    color: white;
+}
+
+.login {
+
+}
+
+.footer {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    .container {
+        background-color: var(--deep-blue);
+    }
+}
+
+
+
+.questions {
+    position: absolute;
+    top: 0;
+    left: 2.5%;
+    width: 95%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
+
+    .floating-text {
+        animation: float var(--float-time) infinite;
+        animation-delay: var(--float-delay);
+        animation-timing-function: ease-in-out;
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        align-items: center;
+        color: var(--light-blue);
+    }
+
+    --float-translate: 10px;
+    --float-time: 2s;
+    --float-delay: 0s;
+
+    #float-1 {
+        --float-translate: 10px;
+        --float-time: 3s;
+        --float-delay: 0s;
+    }
+
+    #float-2 {
+        --float-translate: 15px;
+        --float-time: 2.8s;
+        --float-delay: 0.2s;
+    }
+
+    #float-3 {
+        --float-translate: -10px;
+        --float-time: 3.2s;
+        --float-delay: 0.1s;
+    }
+
+    #float-4 {
+        --float-translate: -15px;
+        --float-time: 3.1s;
+        --float-delay: 0s;
+    }
+
+    .align-left {
+        justify-content: start;
+        text-align: left;
+        align-self: start;
+    }
+
+    .align-right {
+        justify-content: end;
+        text-align: right;
+        align-self: end;
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(var(--float-translate)); /* Adjust the distance and direction as needed */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.tick-title {
+    font-size: var(--font-responsive-lg);
+    font-family: var(--font-family-heading);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.section.tick-section {
+    padding: 70px 0;
+    position: relative;
+
+    .inner-tick-section {
+        /* Add transparency to background color light-blue using color-mix */
+        background: color-mix(in srgb, var(--deep-blue) 50%, transparent);
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 15px 17px 15px;
+    }
+}
+
+.section .tick span {
+    margin-bottom: 0;
+}
+
+.tick {
+    font-size: 1rem;
+    white-space: nowrap;
+    font-weight: 700;
+
+    .tick-flip, .tick-text-inline {
+        font-size: var(--font-responsive-3xl);
+    }
+
+    .tick-label {
+        margin-top: 1em;
+        font-size: 1em;
+    }
+
+    .tick-char {
+        width: 1.5em;
+    }
+
+    .tick-text-inline {
+        display: inline-block;
+        text-align: center;
+        min-width: 1em;
+    }
+
+    .tick-text-inline + .tick-text-inline {
+        margin-left: -.325em;
+    }
+
+    .tick-group {
+        margin: 0 .5em;
+        text-align: center;
+    }
+
+    .tick-label {
+        color: #595d63;
+    }
+
+    .tick-flip-panel-text-wrapper {
+        line-height: 1.45 !important;
+    }
+
+    .tick-flip-panel {
+        background-color: var(--orange);
+    }
+
+    .tick-flip {
+        border-radius: 0.12em;
+    }
+}
+
+@media (min-width: 768px) {
+    .content {
+        .section {
+            margin-bottom: 20px;
+        }
+
+        padding-bottom: 20px;
+    }
+
+    .section.tick-section {
+        padding: 30px 0 20px 0;
+        .inner-tick-section {
+            background: color-mix(in srgb, var(--deep-blue) 20%, transparent);
+        }
+    }
+
+    .questions {
+        .floating-text {
+            max-width: 40%;
+        }
+    }
+}
