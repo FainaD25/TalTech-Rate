@@ -1,0 +1,372 @@
+:root {
+    /* Responsive font sizes using clamp() */
+    --font-responsive-xs: clamp(12px, 1.5vw, 14px);
+    --font-responsive-sm: clamp(14px, 2vw, 16px);
+    --font-responsive-md: clamp(16px, 2.5vw, 20px);
+    --font-responsive-lg: clamp(20px, 3vw, 24px);
+    --font-responsive-xl: clamp(22px, 3.5vw, 28px);
+    --font-responsive-2xl: clamp(30px, 4vw, 36px);
+    --font-responsive-3xl: clamp(38px, 4.5vw, 44px);
+
+    @media (min-width: 768px) {
+        --font-responsive-xs: clamp(10px, 0.5vw, 14px);
+        --font-responsive-sm: clamp(12px, 1vw, 16px);
+        --font-responsive-md: clamp(14px, 1.25vw, 20px);
+        --font-responsive-lg: clamp(18px, 1.5vw, 24px);
+        --font-responsive-xl: clamp(20px, 2vw, 28px);
+        --font-responsive-2xl: clamp(30px, 2.25vw, 36px);
+        --font-responsive-3xl: clamp(34px, 2.5vw, 44px);
+    }
+
+    --font-family-heading: 'Raleway', sans-serif;
+    --font-family-paragraph: 'Lato', sans-serif;
+
+    /* Variables for color HEX codes. Use: font-color: var(--color-name) */
+    --deep-blue: #03045E;
+    --blue: #0077B6;
+    --turquoise: #00B4D8;
+    --light-blue: #90E0EF;
+    --crey: #EDF4F7;
+    --orange: #FF4D00;
+}
+
+/* Base styling */
+body {
+    font-size: var(--font-responsive-md);
+    font-family: var(--font-family-paragraph)
+}
+
+.text-xs {font-size: var(--font-responsive-xs);}
+
+.text-sm {font-size: var(--font-responsive-sm);}
+
+.text-md {font-size: var(--font-responsive-md);}
+
+.text-lg {font-size: var(--font-responsive-lg);}
+
+.text-xl {font-size: var(--font-responsive-xl);}
+
+.text-2xl {font-size: var(--font-responsive-2xl);}
+
+.text-3xl {font-size: var(--font-responsive-3xl);}
+
+h1 {
+    font-size: var(--font-responsive-3xl);
+    font-family: var(--font-family-heading);
+    font-weight: bold;
+}
+
+h2 {
+    font-size: var(--font-responsive-2xl);
+    font-family: var(--font-family-heading);
+    font-weight: bold;
+}
+
+h3 {
+    font-size: var(--font-responsive-xl);
+    font-family: var(--font-family-heading);
+    font-weight: normal;
+}
+
+h4 {
+    font-size: var(--font-responsive-lg);
+    font-family: var(--font-family-heading);
+    font-weight: normal;
+}
+
+h5 {
+    font-size: var(--font-responsive-md);
+    font-family: var(--font-family-heading);
+    font-weight: normal;
+}
+
+p {
+    font-size: var(--font-responsive-md);
+    font-family: var(--font-family-paragraph);
+    font-weight: normal;
+    text-align: left;
+}
+
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Common styles for header and footer */
+.header, .footer {
+    background-color: var(--blue);
+    color: white;
+    text-align: center;
+
+    .container {
+        display: flex;
+        padding: 10px 20px;
+    }
+}
+
+.footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .footer-links {
+        list-style: none;
+        padding: 0;
+        font-size: var(--font-responsive-sm);
+    }
+
+    .footer-links li {
+        display: inline;
+        margin: 0 10px;
+    }
+
+    .footer-links a {
+        text-decoration: none;
+        color: #90E0EF
+    }
+
+    .footer-copyright {
+        font-size: var(--font-responsive-sm);
+    }
+}
+
+.content {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 20px;
+        position: relative;
+    }
+
+    .section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .section span {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+.header {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+
+    .header-logo {
+        width: 50px; /* Adjust the size as needed */
+        height: 50px; /* Should be a square */
+        background: url('../../logos/täht-logo-expanded-03.svg') center/contain no-repeat; /* Use your logo image */
+        margin-left: 10px;
+    }
+
+    .header-icons {
+        font-size: 24px;
+        color: white;
+    }
+
+    .container {
+        position: relative;
+        align-items: center;
+
+        .box {
+            display: flex;
+            flex: 1;
+            align-items: center;
+        }
+
+        .left-box {
+            justify-content: start;
+        }
+
+        .center-box {
+            justify-content: center;
+        }
+
+        .right-box {
+            justify-content: end;
+        }
+    }
+}
+
+.icon {
+    display: inline-block;
+    margin-right: 30px;
+    background-color: white;
+    height: 2vw;
+    width: 2vw;
+    cursor: pointer;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px 10px;
+    }
+
+    .header {
+        .header-title {
+            font-size: 20px;
+        }
+
+        .header-icons {
+            font-size: 30px;
+            margin: 10px 0;
+        }
+
+        .header-logo {
+            width: 40px; /* Adjust the size as needed */
+            height: 40px; /* Should be a square */
+            margin: 10px;
+        }
+
+        .box {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .footer {
+        .container {
+            flex-direction: column;
+        }
+
+        .footer-links li {
+            margin: 5px;
+        }
+
+        .footer-copyright {
+            margin: 5px;
+        }
+    }
+
+    .icon {
+        height: 30px; /* Adjust the size as needed */
+        width: 30px; /* Adjust the size as needed */
+    }
+}
+
+.magnifying-glass-icon {
+    -webkit-mask: url(../../icons/magnifying-glass.svg) center/cover no-repeat;
+    mask: url(../../icons/magnifying-glass.svg) center/cover no-repeat;
+}
+
+.academic-cap-icon {
+    -webkit-mask: url(../../icons/academic-cap.svg) center/cover no-repeat;
+    mask: url(../../icons/academic-cap.svg) center/cover no-repeat;
+}
+
+.user-circle-icon {
+    -webkit-mask: url(../../icons/user-circle.svg) center/cover no-repeat;
+    mask: url(../../icons/user-circle.svg) center/cover no-repeat;
+}
+
+figure.centering img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.button-icon {
+    display: inline-block;
+    margin-left: 5px;
+    background-color: white;
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+}
+
+.magnifying-glass-icon {
+    -webkit-mask: url(public/icons/magnifying-glass.svg) center/cover no-repeat;
+    mask: url(public/icons/magnifying-glass.svg) center/cover no-repeat;
+    gap: 10px;
+    color: #FFF;
+    text-align: center;
+    font-family: Raleway, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+
+    .primary-button {
+        padding: 15px 20px;
+        border-radius: 10px;
+        background: #03045E;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        color: #FFF;
+        text-align: center;
+        font-family: Raleway, sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .primary-button:hover {
+        background: #030080;
+        cursor: pointer;
+    }
+
+
+    .secondary-button {
+        display: inline-flex;
+        padding: 15px 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 10px;
+        border: 1px solid rgba(3, 4, 94, 0.70);
+        background: rgba(255, 77, 0, 0.00);
+        color: #000;
+        text-align: center;
+        font-family: Raleway, sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .secondary-button:hover {
+        background: rgba(0, 0, 0, 0.20);
+        cursor: pointer;
+    }
+
+    .icon-button {
+        padding: 15px 11px;
+        border-radius: 10px;
+        background: #03045E;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        color: #FFF;
+        text-align: center;
+        font-family: Raleway, sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .icon-button:hover {
+        background: #030080;
+        cursor: pointer;
+    }
+}
