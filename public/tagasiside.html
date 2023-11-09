@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tagasiside veebilehele</title>
+    <link rel="stylesheet" href="include/css/tagasiside.css">
+</head>
+
+<header class="header">
+    <div class="container">
+        <div class="left-box box">
+            <a href="header-footer.html" class="header-logo"></a>
+        </div>
+        <div class="center-box box">
+            <span class="text-2xl font-bold">TalTech Rate</span>
+        </div>
+        <div class="right-box header-icons box">
+            <div class="icon academic-cap-icon"></div>
+            <div class="icon magnifying-glass-icon"></div>
+            <div class="icon user-circle-icon"></div>
+        </div>
+    </div>
+</header>
+
+<body>
+<div class="container-body">
+    <h3>Palun anna meie veebilehele tagasisidet!</h3>
+    <form>
+        <div class="row">
+            <div class="col-25">
+                <label for="fname">Eesnimi</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="fname" name="firstname" placeholder="Sinu nimi...">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="lname">Perekonnanimi</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="lname" name="lastname" placeholder="Sinu perekonnanimi...">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="uniid">UNI-ID</label>
+            </div>
+            <div class="col-75">
+                <input type="email" id="uniid" name="uniid" placeholder="6-kohaline UNI-ID">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="emotion">Milline on su kogemus?</label>
+            </div>
+            <div class="col-75">
+                <select id="emotion" name="emotion">
+                    <option value="none">Vali emotsioon</option>
+                    <option value="negative">Negatiivne</option>
+                    <option value="neutral">Neutraalne</option>
+                    <option value="positive">Positiivne</option>
+                    <option value="else">Midagi muud (palun täpsusta)</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="feedback">Tagasiside</label>
+            </div>
+            <div class="col-75">
+                <textarea id="feedback" name="feedback" placeholder="Kirjuta siia oma tagasiside..." style="height:200px"></textarea>
+            </div>
+        </div>
+        <div class="row center">
+            <input type="submit" value="Saada" class="primary-button" id="show-popup-button">
+            <input type="reset" value="Tühjenda" class="secondary-button">
+        </div>
+    </form>
+</div>
+
+<div id="popup">
+    <p>Aitäh, tagasiside eest!</p>
+</div>
+
+<script>
+    // JavaScript to show the popup
+    function showPopup(e) {
+        e.preventDefault();
+        document.getElementById("popup").style.display = "block";
+        setTimeout(function() {
+            document.getElementById("popup").style.display = "none";
+        }, 1000); // Hide the popup after 3 seconds
+        return true;
+    }
+    document.getElementById("show-popup-button").addEventListener("click", showPopup);
+</script>
+
+<footer class="footer">
+    <div class="container">
+        <ul class="footer-links">
+            <li><a href="tagasiside.html">Tagasiside</a></li>
+            <li><a href="privaatsuspoliitika.html">Privaatsuspoliitika</a></li>
+            <li><a href="kasutustingimused.html">Kasutustingimused</a></li>
+        </ul>
+        <div class="footer-copyright">
+            &copy; 2023 taltech.rate
+        </div>
+    </div>
+</footer>
+</body>
+</html>
