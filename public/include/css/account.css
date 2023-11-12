@@ -64,12 +64,3 @@ span.incognito {
   text-align:center;
   padding-top: 10px;
 }
-
-/* Change styles for span and cancel button on extra small screens */
-/* @media screen and (max-width: 300px) {
-  span.psw {
-    display: block;
-    float: none;
-  }
-}
-*/
