@@ -1,0 +1,65 @@
+@import url('global.css');
+
+.info-section {
+    margin-left: 50px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.student-info,
+.image-section {
+    max-width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.info-section h2,
+.info-section p {
+    margin: 0;
+}
+
+
+.image-section,
+.button-section {
+    position: absolute;
+    right: 0;
+    top: 50px;
+}
+
+.image-section img {
+    width: 50%;
+    height: auto;
+    border-radius: 30px;
+}
+
+.button-section {
+    top: 350px;
+    margin-right: 268px;
+}
+
+.another-button-section {
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.another-button-section button {
+    padding: 5px 8px;
+}
+
+.button-section .secondary-button {
+    padding: 5px 8px;
+}
+
+.another-button-section p {
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
