@@ -30,6 +30,9 @@
     --orange: #FF4D00;
 }
 
+ul{
+    list-style-type: circle;
+}
 /* Base styling */
 body {
     font-size: var(--font-responsive-md);
@@ -187,6 +190,7 @@ body, h1, h2, p {
             display: flex;
             flex: 1;
             align-items: center;
+            flex-direction: row;
         }
 
         .left-box {
