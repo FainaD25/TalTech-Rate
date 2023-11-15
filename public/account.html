@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <title>Sisselogimine</title>
     <link rel="stylesheet" href="include/css/account.css">
-
+    <script src="include/js/account.js" defer></script>
 </head>
 
 <body>
-
 <figure>
     <div>
     <img src="logos/täht-logo-expanded-03.svg" alt="Logo">
@@ -16,23 +15,33 @@
     <figcaption><h1>Sisselogimine</h1></figcaption>
 </figure>
 
-<form method="post">
-<div class="container">
-    <input type="text" placeholder="uni-id" name="username" required>
-</div>
+<form id="loginForm">
+    <div class="container box">
+        <label>
+            <input type="text" placeholder="uni-id[@taltech.ee]" name="username" required>
+            <input type="password" placeholder="parool" name="password" required>
+        </label>
+    </div>
 
-<div class="container">
-    <input type="text" placeholder="parool" name="password" required>
-</div>
-
-<div class="container">
-    <button class="button primary-button" type="submit">Logi sisse</button>
-</div>
-
-<div class="container" style="padding-bottom: 50px">
-    <span class="incognito">Pole uni-id? <a href="">Jätka sisse logimata</a></span>
-</div>
+    <div class="container">
+        <button class="button primary-button" type="submit">Logi sisse</button>
+    </div>
 </form>
+<div class="container" style="padding-bottom: 50px">
+    <span class="incognito">Pole uni-id? <a href="account-view.html">Jätka sisse logimata</a></span>
+</div>
 
+<footer class="footer" style="background: none">
+    <div class="container">
+        <ul class="footer-links">
+            <li><a href="tagasiside.html">Tagasiside</a></li>
+            <li><a href="privaatsuspoliitika.html">Privaatsuspoliitika</a></li>
+            <li><a href="kasutustingimused.html">Kasutustingimused</a></li>
+        </ul>
+        <div class="footer-copyright">
+            &copy; 2023 taltech.rate
+        </div>
+    </div>
+</footer>
 </body>
 </html>
