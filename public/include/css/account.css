@@ -8,7 +8,7 @@ body {
 }
 
 figure {
-    padding-top: 100px;
+    padding-top: 4%;
 }
 
 /* Inputs style */
@@ -37,7 +37,6 @@ img{
     width: 100px;
     height: 100px;
     align-self: center;
-    padding-bottom: 5px;
 }
 
 /* The "Sisselogimine" text */
@@ -55,12 +54,16 @@ figcaption {
 .container {
     padding-left: 25%;
     padding-right: 25%;
-    padding-bottom: 7px;
-    padding-top: 7px;
+    padding-top: 1%;
 }
 
 /* The "Jätka sisse logimata" text */
 span.incognito {
   text-align:center;
   padding-top: 10px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
 }
