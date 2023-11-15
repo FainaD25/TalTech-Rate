@@ -1,65 +1,66 @@
 @import url('global.css');
 
 .info-section {
-    margin-left: 50px;
-    padding-top: 50px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
-.student-info,
-.image-section {
-    max-width: 100%;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-}
-
-.info-section h2,
-.info-section p {
-    margin: 0;
-}
-
-
-.image-section,
-.button-section {
-    position: absolute;
-    right: 0;
-    top: 50px;
+    margin: 2vw;
 }
 
 .image-section img {
-    width: 50%;
+    width: 30%;
     height: auto;
-    border-radius: 30px;
+    border-radius: 15%;
 }
 
-.button-section {
-    top: 350px;
-    margin-right: 268px;
+.button-section{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+    .button-section button{
+        padding: 6px;
+        margin: 2%;
+        width: 100%;
+    }
+
+    .button-section p {
+        margin: 5px 10px;
+    }
+
+.container-2 {
+    display: flex;
+    flex-direction: row-reverse;
 }
 
-.another-button-section {
-    margin-left: 50px;
-    margin-top: 10px;
+.section-right {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 50%;
+    margin-top: 2%;
+    float: right;
 }
 
-.another-button-section button {
-    padding: 5px 8px;
+.section-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-top: 2%;
 }
 
-.button-section .secondary-button {
-    padding: 5px 8px;
+.box {
+    margin-bottom: 1%;
+    margin-left: 1%;
+    width: 100%;
 }
 
-.another-button-section p {
-    margin-bottom: 5px;
-    margin-top: 10px;
+body,
+ul,
+p,
+div {
+    margin: 0;
+    padding: 0;
 }
-
-.footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+ul{
+    margin-left: 5%;
 }
