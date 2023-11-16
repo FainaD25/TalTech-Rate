@@ -7,6 +7,6 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     if (username === 'admin' && password === 'admin') {
         window.location.href = 'admin.html';
     } else {
-        window.location.href = 'header-footer.html';
+        window.location.href = 'homepage.html';
     }
 });
