@@ -3,7 +3,7 @@ function showLoginPrompt() {
     const password = prompt("Enter your password:");
 
     if (username === "admin" && password === "admin") {
-        window.location.href = ".html"; // lisada admini home page fail
+        window.location.href = "admin.html"; // lisada admini home page fail
     } else {
         window.location.href = ".html"; // lisada tavakasutaja home page fail
     }

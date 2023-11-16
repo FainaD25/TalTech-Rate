@@ -1,0 +1,103 @@
+@import "global.css";
+
+body, h1, h2, h3, h4, h5, p {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    margin-left: 50px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.welcome-text {
+    margin-left: 0;
+    flex-wrap: wrap;
+    margin-bottom: 1%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+}
+
+.grid-item {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+.grid-text {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+}
+
+.ellipse {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-self: start;
+    margin-right: 2%;
+    margin-top: 1%;
+    color: white
+}
+
+.ellipse::before {
+    content: attr(data-letter);
+    font-size: 20px;
+}
+
+/* Text styles */
+.text-large{
+    font-weight: 600;
+    margin-bottom: 2%;
+}
+
+.text-small{
+    text-align: left;
+    margin-bottom: 2%;
+}
+
+.icons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons-container img {
+    width: 1.5em;
+    height: auto;
+}
+
+.icons-container img:not(:last-child) {
+    margin-right: 1em;
+}
+
+.icons-container img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2% 5%;
+    margin-top: 2%;
+}

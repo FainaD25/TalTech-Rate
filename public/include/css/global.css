@@ -36,7 +36,7 @@ ul{
 /* Base styling */
 body {
     font-size: var(--font-responsive-md);
-    font-family: var(--font-family-paragraph)
+    font-family: var(--font-family-paragraph);
 }
 
 .text-xs {font-size: var(--font-responsive-xs);}
@@ -112,6 +112,10 @@ body, h1, h2, p {
     bottom: 0;
     left: 0;
     right: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 
     .container {
         display: flex;
