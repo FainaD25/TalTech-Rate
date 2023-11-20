@@ -1,0 +1,104 @@
+@import "global.css";
+
+.page {
+    width: 94%;
+    background-color: var(--crey);
+    margin: auto;
+    padding: 10px;
+}
+    .content {
+        display: flex;
+        flex-direction: row;
+        wrap-option: wrap;
+    }
+
+.header-section {
+    width: 100%;
+    align-content: start;
+    margin: 5px 0 20px 8px;
+}
+
+.right {
+    width: 50%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.left {
+    width: 50%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+    .header-s{
+        display: flex;
+        margin: 0 0 10px;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 5px;
+    }
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+    .header-s{
+        display: flex;
+        margin: 0 0 0 5px;
+    }
+
+    .text {
+        display: flex;
+        margin: 5px;
+    }
+
+    h1,
+    h2,
+    h3,
+    p,
+    ul {
+        margin: 0;
+    }
+
+.stars {
+    color: var(--orange)
+}
+
+.blue-box {
+    display: flex;
+    background-color: var(--blue);
+    border-radius: 25px;
+    padding: 10px;
+    width: 80%;
+}
+    .header-b {
+        margin-bottom: 10px;
+        color: white;
+        align-self: center;
+    }
+
+.button-section {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.secondary-button {
+    color: white;
+    border-color: white;
+    margin-bottom: 10px;
+}
