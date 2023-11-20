@@ -5,8 +5,8 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     const password = document.querySelector('input[name="password"]').value;
 
     if (username === 'admin' && password === 'admin') {
-        window.location.href = 'header-footer.html';
+        window.location.href = 'admin.html';
     } else {
-        window.location.href = 'account-view.html';
+        window.location.href = 'homepage.html';
     }
 });
