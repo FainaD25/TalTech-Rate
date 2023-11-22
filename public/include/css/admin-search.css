@@ -58,7 +58,6 @@ body, h1, h2, h3, h4, h5, p {
 
 .grid-item {
   position: relative;
-  width: 100%;
   display: flex;
   flex-direction: column; /* Align items in a column */
   justify-content: flex-start; /* Align items to the start */
