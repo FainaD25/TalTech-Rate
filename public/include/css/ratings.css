@@ -65,5 +65,9 @@ button.load-more {
     text-transform: uppercase;
     letter-spacing: 0.15rem;
     margin: 10px;
+}
 
+.secondary-button {
+    padding: 10px;
+    border-radius: 3px;
 }
