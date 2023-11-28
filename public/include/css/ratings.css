@@ -1,2 +1,69 @@
-@import "public/include/css/global.css";
+@import "global.css";
 
+.main {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    margin: auto;
+    background-color: var(--crey)
+}
+
+.teachers {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    float: left;
+}
+
+.subjects {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    float: right;
+}
+
+.item {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    padding: 10px 0 10px 10px;
+    position: relative;
+    justify-content: space-between;
+}
+
+h3 {
+    font-size: var(--font-responsive-lg);
+    font-weight: 500;
+    margin: 0;
+}
+.stars {
+    color: var(--orange)
+}
+
+.link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.link:hover {
+  border: var(--deep-blue) 2px dotted;
+}
+
+button.load-more {
+    width: calc((100% / 3) - 8px);
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    margin: 10px;
+
+}
