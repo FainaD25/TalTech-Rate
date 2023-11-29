@@ -9,6 +9,8 @@ div[class=container]{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 
 h1 {
