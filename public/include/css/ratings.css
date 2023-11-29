@@ -4,7 +4,6 @@
     width: 90%;
     display: flex;
     flex-direction: row;
-    align-items: start;
     margin: auto;
     background-color: var(--crey)
 }
@@ -70,4 +69,22 @@ button.load-more {
 .secondary-button {
     padding: 10px;
     border-radius: 3px;
+}
+
+.center {
+    display: flex;
+    text-align: center;
+    margin: auto;
+    flex-direction: column;
+}
+.search {
+    margin: 20px auto;
+    width: 70%;
+    padding: 10px;
+    border-radius: 50px;
+    border: 2px solid var(--blue);
+    font-size: var(--font-responsive-md);
+    background-color: white;
+    text-align: left;
+    cursor: pointer;
 }

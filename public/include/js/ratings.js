@@ -30,4 +30,11 @@ document.addEventListener("DOMContentLoaded", function() {
             teacherItemContainer.insertBefore(newItem, loadMoreTeacherBtn);
         }
     });
+
+    // Searchbox click event
+    const searchBox = document.getElementById('searchbox');
+
+    searchBox.addEventListener('click', function() {
+        window.location.href = 'search.html';
+    });
 });
