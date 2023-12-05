@@ -1,0 +1,75 @@
+@import "global.css";
+
+.content {
+    margin-left: 50px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    margin-bottom: 6%;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column; /* Change to column layout */
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px; /* Add padding for spacing */
+}
+
+.grid-item-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Adjust margin as needed */
+}
+
+.text-sections {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    max-width: 60%/* Adjust margin as needed */
+}
+
+.additional-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start */
+}
+
+.buttons {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    gap: 50px;
+    margin-top: 20px;/* Add space between buttons */
+}
+
+.ellipse {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-self: start;
+    margin-right: 2%;
+    margin-top: 1%;
+    color: white
+}
+
+.ellipse::before {
+    content: attr(data-letter);
+    font-size: 20px;
+}
+
+.star-rating {
+  color: var(--orange);
+}
