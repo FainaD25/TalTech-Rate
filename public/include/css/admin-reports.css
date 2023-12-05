@@ -1,11 +1,13 @@
 @import "global.css";
 
 .content {
-    margin-left: 50px;
-    padding-top: 30px;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    background-color: var(--crey);
 }
 
 .grid-container {

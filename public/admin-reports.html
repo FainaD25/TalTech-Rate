@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="include/css/admin-reports.css">
-    <title>Your Web Page</title>
+    <title>Reportid</title>
+    <script src="include/js/back-button.js"></script>
 </head>
 <body>
 <!-- Header -->
@@ -25,7 +26,12 @@
 </header>
 
 <div class="content">
-    <p class="text-3xl">Viimati teatatud hinnangud</p>
+    <div class="for-back-button">
+        <button onclick="goBack()" class="back-button">
+            <img src="icons/chevron-left.svg" alt="Go Back">
+        </button>
+        <div><p class="text-3xl">Viimati teatatud hinnangud</p></div>
+    </div>
 <div class="grid-container">
     <div class="grid-item">
         <div class="grid-item-content">
