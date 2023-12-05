@@ -3,7 +3,6 @@
 .content-wrapper {
   display: flex;
   align-items: center;
-  margin-top: 5%;
 }
 
 .ellipse {
@@ -127,4 +126,10 @@
 
 .chevron-icon {
   cursor: pointer;
+}
+.main{
+    width: 90%;
+    margin: auto;
+    background-color: var(--crey);
+    padding: 30px;
 }
