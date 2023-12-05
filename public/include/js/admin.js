@@ -7,4 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
     userView.addEventListener('click', function() {
         window.location.href = 'account.html';
     });
+    const userReports = document.getElementById('reports');
+    userView.addEventListener('click', function() {
+        window.location.href = 'admin-reports.html';
+    });
 });
