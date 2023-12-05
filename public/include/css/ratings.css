@@ -71,14 +71,7 @@ button.load-more {
     border-radius: 3px;
 }
 
-.center {
-    display: flex;
-    text-align: center;
-    margin: auto;
-    flex-direction: column;
-}
 .search {
-    margin: 20px auto;
     width: 70%;
     padding: 10px;
     border-radius: 50px;
@@ -87,4 +80,9 @@ button.load-more {
     background-color: white;
     text-align: left;
     cursor: pointer;
+}
+
+.for-back-button{
+    padding-top: 20px;
+    padding-bottom: 20px;
 }

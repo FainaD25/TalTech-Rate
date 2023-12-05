@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hinda õppeainet</title>
+    <title>Hinda õppejõudu</title>
     <link rel="stylesheet" href="include/css/add-new.css">
     <script src="include/js/back-button.js"></script>
 </head>
@@ -24,65 +24,57 @@
     </div>
 </header>
 
+
 <button onclick="goBack()" class="back-button">
     <img src="icons/chevron-left.svg" alt="Go Back">
 </button>
 
 <div class="container">
-    <h1>Hinda õppeainet</h1>
+    <h1>Hinda õppejõudu</h1>
 </div>
 
 <form method="post">
-<div class="container">
-    <input type="text" placeholder="Õppeaine nimi" name="course" required>
-</div>
 
-<div class="container">
-    <input type="text" placeholder="Õppeaine kood" name="course_code" required>
-</div>
+    <div class="star-rating">
+        <input type="radio" name="stars" id="star-a" value="5"/>
+        <label for="star-a"></label>
 
-<div class="container">
-    <input type="text" placeholder="Õppejõud" name="teacher" required>
-</div>
+        <input type="radio" name="stars" id="star-b" value="4"/>
+        <label for="star-b"></label>
 
-<div class="star-rating">
-    <input type="radio" name="stars" id="star-a" value="5"/>
-    <label for="star-a"></label>
+        <input type="radio" name="stars" id="star-c" value="3"/>
+        <label for="star-c"></label>
 
-    <input type="radio" name="stars" id="star-b" value="4"/>
-    <label for="star-b"></label>
+        <input type="radio" name="stars" id="star-d" value="2"/>
+        <label for="star-d"></label>
 
-    <input type="radio" name="stars" id="star-c" value="3"/>
-    <label for="star-c"></label>
+        <input type="radio" name="stars" id="star-e" value="1"/>
+        <label for="star-e"></label>
+    </div>
+    <div class="container">
+        <input type="text" placeholder="Õppejõud" name="teacher" required>
+    </div>
 
-    <input type="radio" name="stars" id="star-d" value="2"/>
-    <label for="star-d"></label>
-
-    <input type="radio" name="stars" id="star-e" value="1"/>
-    <label for="star-e"></label>
-</div>
-
-
-<div class="container">
-    <input type="text" placeholder="Kommentaar" name="comment" style="height: 100px">
-</div>
-<div class="container">
-    <div class="drop-zone" >
-        <div class="flex-container">
-            <div>
-                <span class="drop-zone__prompt"><i class="upload-icon"></i><br>Drop file here or click to upload</span>
+    <div class="container">
+        <input type="text" placeholder="Kommentaar" name="comment" style="height: 100px">
+    </div>
+    <div class="container">
+        <div class="drop-zone" >
+            <div class="flex-container">
+                <div>
+                    <span class="drop-zone__prompt"><i class="upload-icon"></i><br>Drop file here or click to upload</span>
+                </div>
             </div>
+            <input type="file" name="myFile" class="drop-zone__input">
         </div>
-        <input type="file" name="myFile" class="drop-zone__input">
     </div>
-</div>
 
-<script src="./include/js/add-new.js"></script>
-<div class="submit-button">
-    <div class="flex-container">
-        <button class="button primary-button" type="submit">Lisa</button>
+    <script src="./include/js/add-new.js"></script>
+    <div class="submit-button">
+        <div class="flex-container">
+            <button class="button primary-button" type="submit">Lisa</button>
+        </div>
     </div>
-</div>
 </form>
 
 

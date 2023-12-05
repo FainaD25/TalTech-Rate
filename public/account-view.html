@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="include/css/account-view.css">
     <title>Kasutaja</title>
+    <script src="include/js/back-button.js"></script>
+    <script src="include/js/account-view.js"></script>
 </head>
 <body>
 
@@ -24,6 +26,9 @@
     </div>
 </header>
 <div class="content">
+    <button onclick="goBack()" class="back-button">
+        <img src="icons/chevron-left.svg" alt="Go Back">
+    </button>
     <div class="container-2">
         <div class="section-right">
             <div class="box">
@@ -46,7 +51,9 @@
                         Discord: kuusepeeter
                     </p>
                 </div>
+                <button class="secondary-button button-section" id="log-out">Logi välja</button>
             </div>
+
         </div>
         <div class="section-left">
             <div class="box">
