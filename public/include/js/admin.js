@@ -11,4 +11,8 @@ document.addEventListener('DOMContentLoaded', function() {
     userView.addEventListener('click', function() {
         window.location.href = 'admin-reports.html';
     });
+    const goHomeButton = document.getElementById('go-home');
+    goHomeButton.addEventListener('click', function() {
+    window.location.href = 'homepage.html';
+    });
 });
