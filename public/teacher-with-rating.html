@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lisa hinnang</title>
+    <link rel="stylesheet" href="include/css/add-new.css">
+</head>
+
+<header class="header">
+    <div class="container">
+        <div class="left-box box">
+            <a href="header-footer.html" class="header-logo"></a>
+        </div>
+        <div class="center-box box">
+            <span class="text-2xl font-bold">TalTech Rate</span>
+        </div>
+        <div class="right-box header-icons box">
+            <div class="icon academic-cap-icon"></div>
+            <div class="icon magnifying-glass-icon"></div>
+            <div class="icon user-circle-icon"></div>
+        </div>
+    </div>
+</header>
+
+
+<body>
+<div class="container" style="padding-top: 4%">
+    <h1>Hinda õppejõudu</h1>
+</div>
+
+<div class="container">
+    <h3>Õppejõud: Mohammad Tariq Meeran</h3>
+</div>
+
+<div class="container">
+    <div class="star-rating-label">
+        <h3>Hinnang</h3>
+    </div>
+</div>
+
+<div class="star-rating">
+    <input type="radio" name="stars" id="star-a" value="5"/>
+    <label for="star-a"></label>
+
+    <input type="radio" name="stars" id="star-b" value="4"/>
+    <label for="star-b"></label>
+
+    <input type="radio" name="stars" id="star-c" value="3"/>
+    <label for="star-c"></label>
+
+    <input type="radio" name="stars" id="star-d" value="2"/>
+    <label for="star-d"></label>
+
+    <input type="radio" name="stars" id="star-e" value="1"/>
+    <label for="star-e"></label>
+</div>
+
+
+<div class="container">
+    <input type="text" placeholder="Kommentaar" name="comment" style="height: 100px">
+</div>
+<div class="container">
+    <div class="drop-zone" >
+        <div class="flex-container">
+            <div>
+                <span class="drop-zone__prompt"><i class="upload-icon"></i><br>Drop file here or click to upload</span>
+            </div>
+        </div>
+        <input type="file" name="myFile" class="drop-zone__input">
+    </div>
+</div>
+
+<script src="./include/js/add-new.js"></script>
+<div class="submit-button">
+    <div class="container">
+        <button class="button primary-button" type="submit" onclick=window.location.href="subject-with-rating.html" style="margin-right: 15%">Lisa</button>
+        <button class="button secondary-button" type="submit" onclick=window.location.href="subject.html">Tagasi</button>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div class="container">
+        <ul class="footer-links">
+            <li><a href="tagasiside.html">Tagasiside</a></li>
+            <li><a href="privaatsuspoliitika.html">Privaatsuspoliitika</a></li>
+            <li><a href="kasutustingimused.html">Kasutustingimused</a></li>
+        </ul>
+        <div class="footer-copyright">
+            &copy; 2023 taltech.rate
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
