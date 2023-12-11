@@ -9,6 +9,7 @@ div[class=center-container] {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 1em;
 }
 
 /* Aligning items to left side */
@@ -332,4 +333,7 @@ div[class=interactions] {
 
 .post-rating:not(.post-rating-selected) > .post-rating-button:hover {
 	color: #000000;
+}
+h3 {
+    margin: 0;
 }
