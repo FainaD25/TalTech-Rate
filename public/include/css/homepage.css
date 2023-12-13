@@ -102,3 +102,12 @@
     border-color: white;
     margin-bottom: 10px;
 }
+
+.no-link{
+    font-size: var(--font-responsive-md);
+    font-family: var(--font-family-paragraph);
+    font-weight: normal;
+    text-align: left;
+    color:inherit;
+    text-decoration:none;
+}

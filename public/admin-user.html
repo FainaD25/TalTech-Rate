@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="include/css/admin-user.css">
     <title>User Search</title>
+    <script src="include/js/back-button.js"></script>
 </head>
 <body>
 <!-- Header -->
@@ -23,146 +24,150 @@
         </div>
     </div>
 </header>
-
-<div class="content-wrapper">
-  <div class="ellipse" data-letter="M"></div>
-  <div class="text-container">
-    <div class="text-xl font-bold">Mart Tamm</div>
-    <div class="text-sm">matamm</div>
+<div class="main">
+  <div class="content-wrapper">
+    <button onclick="goBack()" class="back-button">
+      <img src="icons/chevron-left.svg" alt="Go Back">
+    </button>
+    <div class="ellipse" data-letter="M"></div>
+    <div class="text-container">
+      <div class="text-xl font-bold">Mart Tamm</div>
+      <div class="text-sm">matamm</div>
+    </div>
+    <div class="button-container">
+      <button class="primary-button">Eemalda kasutaja</button>
+      <button class="secondary-button">Hoiata kasutajat</button>
+      <button class="icon-button primary-button">Võta kasutajaga ühendust</button>
+    </div>
   </div>
-  <div class="button-container">
-    <button class="primary-button">Eemalda kasutaja</button>
-    <button class="secondary-button">Hoiata kasutajat</button>
-    <button class="icon-button primary-button">Võta kasutajaga ühendust</button>
-  </div>
-</div>
 
-<div class="grid-container">
+  <div class="grid-container">
+    <div class="grid-item">
+      <div class="grid-icon">
+        <img src="icons/user-circle.svg" alt="User Icon">
+      </div>
+      <div class="content">
+        <div class="text text-xl">Kasutaja andmed</div>
+        <div class="additional-info">
+          <p>@: matamm@taltech.ee</p>
+          <p>Sünnikuupäev: 10/10/2001</p>
+          <p>Kasutaja loodud: 16.10.2023</p>
+          <p>Õppegrupp: IAIB2</p>
+          <p>Haridus: Keskharidus</p>
+          <p>IG: @marttamm</p>
+          <p>Discord: tammart</p>
+        </div>
+      </div>
+    </div>
   <div class="grid-item">
     <div class="grid-icon">
-      <img src="icons/user-circle.svg" alt="User Icon">
+      <img src="icons/folder.svg" alt="Folder Icon">
     </div>
     <div class="content">
-      <div class="text text-xl">Kasutaja andmed</div>
-      <div class="additional-info">
-        <p>@: matamm@taltech.ee</p>
-        <p>Sünnikuupäev: 10/10/2001</p>
-        <p>Kasutaja loodud: 16.10.2023</p>
-        <p>Õppegrupp: IAIB2</p>
-        <p>Haridus: Keskharidus</p>
-        <p>IG: @marttamm</p>
-        <p>Discord: tammart</p>
-      </div>
-    </div>
-  </div>
-<div class="grid-item">
-  <div class="grid-icon">
-    <img src="icons/folder.svg" alt="Folder Icon">
-  </div>
-  <div class="content">
-    <div class="text text-xl">Tehtud hinnangud 5</div>
-    <div class="reviews-section">
-      <div class="review">
-        <div class="review-details">
-          <div class="class-name">Programmeerimise algkursus (ITI0102)</div>
-          <div class="star-rating">★★★★★</div>
-          <div class="review-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula dui sit amet elit condimentum lacinia.
-          </div>
-        </div>
-        <div class="chevron-icon">
-          <img src="icons/chevron-down.svg" alt="Chevron Icon">
-        </div>
-      </div>
-      <div class="review">
-        <div class="review-details">
-          <div class="class-name">Avalik esinemine (TSK0309)</div>
-          <div class="star-rating">★★★★☆</div>
-          <div class="review-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula dui sit amet elit condimentum lacinia.
-          </div>
-        </div>
-        <div class="chevron-icon">
-          <img src="icons/chevron-down.svg" alt="Chevron Icon">
-        </div>
-      </div>
-        <div class="more-info">
-      <div class="chevron-icon">
-        <img src="icons/chevron-down.svg" alt="Chevron Icon">
-      </div>
-      <div class="more-text">Rohkem</div>
-    </div>
-    </div>
-  </div>
-</div>
-
-  <div class="grid-item">
-    <div class="grid-icon">
-      <img src="icons/shield-exclamation.svg" alt="Shield Exclamation Icon">
-    </div>
-    <div class="content">
-    <div class="text text-xl">Tehtud reportid 1</div>
+      <div class="text text-xl">Tehtud hinnangud 5</div>
       <div class="reviews-section">
-      <div class="review">
-        <div class="review-details">
-          <div class="name-text">
-            <div class="additional-info">
-              <div class="small-ellipse" data-letter="S"></div>
+        <div class="review">
+          <div class="review-details">
+            <div class="class-name">Programmeerimise algkursus (ITI0102)</div>
+            <div class="star-rating">★★★★★</div>
+            <div class="review-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula dui sit amet elit condimentum lacinia.
             </div>
-            Siim Kütt
           </div>
-          <div class="class-name">Füüsika täiendusõpe (YMA0090)</div>
-          <div class="star-rating">★☆☆☆☆</div>
-          <div class="review-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula dui sit amet elit condimentum lacinia.
+          <div class="chevron-icon">
+            <img src="icons/chevron-down.svg" alt="Chevron Icon">
           </div>
         </div>
+        <div class="review">
+          <div class="review-details">
+            <div class="class-name">Avalik esinemine (TSK0309)</div>
+            <div class="star-rating">★★★★☆</div>
+            <div class="review-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula dui sit amet elit condimentum lacinia.
+            </div>
+          </div>
+          <div class="chevron-icon">
+            <img src="icons/chevron-down.svg" alt="Chevron Icon">
+          </div>
+        </div>
+          <div class="more-info">
         <div class="chevron-icon">
           <img src="icons/chevron-down.svg" alt="Chevron Icon">
         </div>
-        </div>
+        <div class="more-text">Rohkem</div>
+      </div>
       </div>
     </div>
   </div>
-  <div class="grid-item">
-    <div class="grid-icon">
-      <img src="icons/shield-exclamation.svg" alt="Shield Exclamation Icon">
-    </div>
-    <div class="content">
-    <div class="text text-xl">Saadud reportid 3</div>
-    <div class="reviews-section">
-      <div class="review">
-        <div class="review-details">
-          <div class="class-name">Füüsika täiendusõpe (YMA0090)</div>
-          <div class="star-rating">★☆☆☆☆</div>
-          <div class="review-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula dui sit amet elit condimentum lacinia.
+
+    <div class="grid-item">
+      <div class="grid-icon">
+        <img src="icons/shield-exclamation.svg" alt="Shield Exclamation Icon">
+      </div>
+      <div class="content">
+      <div class="text text-xl">Tehtud reportid 1</div>
+        <div class="reviews-section">
+        <div class="review">
+          <div class="review-details">
+            <div class="name-text">
+              <div class="additional-info">
+                <div class="small-ellipse" data-letter="S"></div>
+              </div>
+              Siim Kütt
+            </div>
+            <div class="class-name">Füüsika täiendusõpe (YMA0090)</div>
+            <div class="star-rating">★☆☆☆☆</div>
+            <div class="review-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula dui sit amet elit condimentum lacinia.
+            </div>
+          </div>
+          <div class="chevron-icon">
+            <img src="icons/chevron-down.svg" alt="Chevron Icon">
+          </div>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="grid-icon">
+        <img src="icons/shield-exclamation.svg" alt="Shield Exclamation Icon">
+      </div>
+      <div class="content">
+      <div class="text text-xl">Saadud reportid 3</div>
+      <div class="reviews-section">
+        <div class="review">
+          <div class="review-details">
+            <div class="class-name">Füüsika täiendusõpe (YMA0090)</div>
+            <div class="star-rating">★☆☆☆☆</div>
+            <div class="review-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula dui sit amet elit condimentum lacinia.
+            </div>
+          </div>
+          <div class="chevron-icon">
+            <img src="icons/chevron-down.svg" alt="Chevron Icon">
+          </div>
+        </div>
+        <div class="review">
+          <div class="review-details">
+            <div class="class-name">Diskreetne matemaatika (IAX0010)</div>
+            <div class="star-rating">★☆☆☆☆</div>
+            <div class="review-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula dui sit amet elit condimentum lacinia.
+            </div>
+          </div>
+          <div class="chevron-icon">
+            <img src="icons/chevron-down.svg" alt="Chevron Icon">
+          </div>
+        </div>
+          <div class="more-info">
         <div class="chevron-icon">
           <img src="icons/chevron-down.svg" alt="Chevron Icon">
         </div>
+        <div class="more-text">Rohkem</div>
       </div>
-      <div class="review">
-        <div class="review-details">
-          <div class="class-name">Diskreetne matemaatika (IAX0010)</div>
-          <div class="star-rating">★☆☆☆☆</div>
-          <div class="review-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula dui sit amet elit condimentum lacinia.
-          </div>
-        </div>
-        <div class="chevron-icon">
-          <img src="icons/chevron-down.svg" alt="Chevron Icon">
-        </div>
       </div>
-        <div class="more-info">
-      <div class="chevron-icon">
-        <img src="icons/chevron-down.svg" alt="Chevron Icon">
-      </div>
-      <div class="more-text">Rohkem</div>
     </div>
     </div>
-  </div>
   </div>
 </div>
 

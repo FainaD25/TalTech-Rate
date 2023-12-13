@@ -365,3 +365,24 @@ figure.centering img {
     background: #030080;
     cursor: pointer;
 }
+
+.back-button {
+    cursor: pointer;
+    width: 60px;
+    height: auto;
+    background-color: transparent;
+    border: none;
+    margin: 0 15px 10px 0;
+}
+
+.for-back-button {
+    display: flex;
+    flex-direction: row;
+}
+
+.bg {
+    width: 94%;
+    background-color: var(--crey);
+    margin: auto;
+    padding: 10px;
+}

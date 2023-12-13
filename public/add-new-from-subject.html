@@ -3,46 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hinda õppeainet</title>
+    <title>Lisa hinnang</title>
     <link rel="stylesheet" href="include/css/add-new.css">
-    <script src="include/js/back-button.js"></script>
 </head>
-<body>
+
 <header class="header">
     <div class="container">
         <div class="left-box box">
-            <a href="homepage.html" class="header-logo"></a>
+            <a href="header-footer.html" class="header-logo"></a>
         </div>
         <div class="center-box box">
             <span class="text-2xl font-bold">TalTech Rate</span>
         </div>
         <div class="right-box header-icons box">
-            <a href="ratings.html" class="icon academic-cap-icon"></a>
-            <a href="search.html" class="icon magnifying-glass-icon"></a>
-            <a href="account-view.html" class="icon user-circle-icon"></a>
+            <div class="icon academic-cap-icon"></div>
+            <div class="icon magnifying-glass-icon"></div>
+            <div class="icon user-circle-icon"></div>
         </div>
     </div>
 </header>
 
-<button onclick="goBack()" class="back-button">
-    <img src="icons/chevron-left.svg" alt="Go Back">
-</button>
 
-<div class="container">
+<body>
+<div class="container" style="padding-top: 4%">
     <h1>Hinda õppeainet</h1>
 </div>
 
-<form method="post">
-<div class="container">
-    <input type="text" placeholder="Õppeaine nimi" name="course" required>
+
+<div class="flex-container">
+    <h3>Õppeaine nimi: Arvutivõrkude alused</h3>
 </div>
 
 <div class="container">
-    <input type="text" placeholder="Õppeaine kood" name="course_code" required>
+  <h3>Õppeaine kood: ICA0019</h3>
 </div>
 
 <div class="container">
-    <input type="text" placeholder="Õppejõud" name="teacher" required>
+  <h3>Õppejõud: Mohammad Tariq Meeran</h3>
+</div>
+
+<div class="container">
+    <div class="star-rating-label">
+        <h3>Hinnang</h3>
+    </div>
 </div>
 
 <div class="star-rating">
@@ -79,11 +82,11 @@
 
 <script src="./include/js/add-new.js"></script>
 <div class="submit-button">
-    <div class="flex-container">
-        <button class="button primary-button" type="submit">Lisa</button>
+    <div class="container">
+        <button class="button primary-button" type="submit" onclick=window.location.href="subject-with-rating.html" style="margin-right: 15%">Lisa</button>
+        <button class="button secondary-button" type="submit" onclick=window.location.href="subject.html">Tagasi</button>
     </div>
 </div>
-</form>
 
 
 <footer class="footer">

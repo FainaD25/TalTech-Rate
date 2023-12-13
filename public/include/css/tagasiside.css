@@ -28,6 +28,8 @@ label {
     border-radius: 5px;
     background-color: var(--crey);
     padding: 20px;
+    width: 94%;
+    margin: auto;
 }
 
 .col-25 {
