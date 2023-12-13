@@ -39,11 +39,11 @@ Juhendaja: Leelo Aino Jürgenstein
 - [x] 1 sprint
 - [x] 2 sprint
 - [x] 3 sprint
-- [ ] 4 sprint
-- [ ] 5 sprint
-- [ ] 6 sprint
-- [ ] 7 sprint
-- [ ] 8 sprint
+- [x] 4 sprint
+- [x] 5 sprint
+- [x] 6 sprint
+- [x] 7 sprint
+- [x] 8 sprint
 
 ## Hindamine
 
