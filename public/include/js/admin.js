@@ -13,6 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     const goHomeButton = document.getElementById('go-home');
     goHomeButton.addEventListener('click', function() {
-    window.location.href = 'homepage.html';
+    window.location.href = 'account.html';
     });
 });
