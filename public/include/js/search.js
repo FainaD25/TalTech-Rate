@@ -49,12 +49,17 @@ document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('search-input');
     const resultsContainer = document.getElementById('search-results');
 
+
     function displayResults(filter = '') {
         resultsContainer.innerHTML = ''; // Clear current results
         fakeResults.forEach(result => {
             if (result.title.toLowerCase().includes(filter.toLowerCase())) {
                 const resultElement = document.createElement('div');
                 resultElement.innerHTML = `<h2>${result.title}</h2>`;
+                resultElement.style.cursor = 'pointer'; // Make it look clickable
+                resultElement.onclick = function() {
+                    window.location.href = `subject.html`;
+                };
                 resultsContainer.appendChild(resultElement);
             }
         });
