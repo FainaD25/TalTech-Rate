@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         if (resultsContainer.innerHTML === '') {
-            resultsContainer.innerHTML = '<div>No results found</div>';
+            resultsContainer.innerHTML = '<div>Tulemusi ei leitud</div>';
         }
     }
 
