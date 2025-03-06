@@ -1,5 +1,8 @@
 # Taltech Rate Veebiprojekt README
 
+## Autorid
+Kelli Pikka, Faina Dõmša, Sten Kokk
+
 ## Eesmärgid
 
 1. **Eelnevalt loodud prototüübi realiseerimine**
